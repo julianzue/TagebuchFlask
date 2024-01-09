@@ -14,7 +14,7 @@ def login():
             user = request.form.get("user")
             password = request.form.get("password")
 
-            if user == "julian" and password == "julian@tagebuch":
+            if user == "julian" and password == "******":
                 return redirect(url_for("diary"))
 
     return render_template("login.html")
